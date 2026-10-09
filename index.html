@@ -184,10 +184,6 @@ document.getElementById('dateLabel').textContent=`${viDays[n.weekday]||''}, ${n.
 document.getElementById('gift').textContent=data.icon||'💜';
 document.getElementById('dayTitle').textContent=data.title||'Lời chúc hôm nay';
 document.getElementById('wish').textContent=data.text;
-/* GoatCounter v2 — giữ nguyên cơ chế đã chạy ổn */
-window.goatcounter=window.goatcounter||{};
-window.goatcounter.path=function(){return `/wish/${full}`};
-window.goatcounter.title=function(){return `${data.title||'Lời chúc hôm nay'} — ${full}`};
 </script>
 <script data-goatcounter="https://nbin.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
