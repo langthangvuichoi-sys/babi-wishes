@@ -62,9 +62,11 @@ document.getElementById('dateLabel').textContent=`${viDays[n.weekday]||''}, ${n.
 document.getElementById('gift').textContent=data.icon||'💜';
 document.getElementById('dayTitle').textContent=data.title||'Lời chúc hôm nay';
 document.getElementById('wish').textContent=data.text;
-window.goatcounter=window.goatcounter||{};window.goatcounter.no_onload=true;
-window.__babiWishTracking={path:`/wish/${full}`,title:`${data.title||'Lời chúc hôm nay'} — ${full}`};
-(function(){let tries=0;const timer=setInterval(function(){tries++;if(window.goatcounter&&typeof window.goatcounter.count==='function'){clearInterval(timer);window.goatcounter.count({path:window.__babiWishTracking.path,title:window.__babiWishTracking.title});}else if(tries>=100)clearInterval(timer)},100)})();
+/* GoatCounter: let the official script send one pageview automatically.
+   path/title callbacks make each opening appear under /wish/YYYY-MM-DD. */
+window.goatcounter=window.goatcounter||{};
+window.goatcounter.path=function(){return `/wish/${full}`};
+window.goatcounter.title=function(){return `${data.title||'Lời chúc hôm nay'} — ${full}`};
 </script>
 <script data-goatcounter="https://nbin.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
