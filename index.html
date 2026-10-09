@@ -37,17 +37,139 @@ const endings=[
 "Tối về chỉ cần em thấy hôm nay cũng là một ngày đáng sống là Papa vui rồi. 💜","Phần còn lại cứ để ngày mai lo; hôm nay bình yên trước đã nha em. 💜","Không cần hoàn hảo, chỉ cần hôm nay tử tế với em là được. 💜","Chúc em đi qua ngày thật êm và tối về ngủ một giấc ngon. 💜","Có gì mệt thì để xuống bớt nha babi, đừng mang hết lên giường ngủ. 💜","Papa chỉ mong cuối ngày em có thể mỉm cười một cái rồi nói: hôm nay ổn. 💜","Nếu hôm nay bình thường thôi thì cũng tốt; bình thường mà dễ chịu đã quý lắm rồi. 💜","Mong niềm vui ở lâu hơn một chút, còn chuyện phiền thì đi nhanh hơn một chút. 💜","Nhớ dành cho mình một điều dễ thương hôm nay nha babi. 💜","Chỉ cần lòng em nhẹ hơn lúc sáng một chút là đủ rồi. 💜","Tối nay nhớ ngủ ngoan, chuyện nào chưa xong mai mình tính tiếp. 💜","Mong em kết thúc hôm nay bằng cảm giác mình đã làm đủ rồi. 💜","Đừng quên tự thưởng cho mình một thứ nhỏ xíu nếu hôm nay em đã cố gắng nha. 💜","Papa mong ngày hôm nay sẽ hiền với em từ đầu tới cuối. 💜","Nếu có khoảnh khắc vui nào xảy ra, nhớ giữ nó lại lâu lâu một chút nha. 💜","Mong em có một ngày chẳng cần chứng minh gì với ai cả. 💜","Tối về ăn gì ngon nha, đó cũng là một thành tựu của ngày rồi. 💜","Mong em được là chính em mà vẫn thấy mình được cuộc đời ôm nhẹ một cái. 💜","Ngày dài tới đâu rồi cũng hết; mong phần còn lại của nó thật êm với em. 💜","Chúc babi hôm nay vui theo kiểu rất riêng của babi. 💜","Papa gửi em một cái ôm tưởng tượng, loại không làm phiền nhưng vẫn ấm. 💜","Mong lúc khép mắt tối nay em không còn phải nghĩ nhiều nữa. 💜","Hôm nay nếu vui thì tận hưởng; nếu mệt thì nghỉ; vậy là đủ. 💜","Mong em luôn nhớ bản thân cũng là một người cần được em chăm sóc. 💜","Chúc một ngày nhỏ xinh, vừa vặn với trái tim em. 💜","Nếu chẳng có gì đặc biệt xảy ra cũng không sao; em bình an là được. 💜","Mong tối nay em có một câu chuyện nhỏ khiến mình thấy ngày hôm nay không uổng. 💜","Papa không xin ngày hôm nay hoàn hảo, chỉ xin nó đừng làm em buồn lâu. 💜","Chúc em gặp nhiều điều dễ thương hơn số lần em phải thở dài hôm nay. 💜","Mong ngày khép lại nhẹ như cách một bài nhạc hay dần nhỏ đi. 💜","Ngày mai sẽ có lời chúc khác; còn hôm nay Papa chỉ mong em vui. 💜","Vậy thôi, một lời chúc nhỏ dành riêng cho em của ngày hôm nay. 💜"
 ];
 const icons=['🌷','☁️','🫧','🍰','✨','🎀','🌙','🌼','🍀','🪻','💜','🌸'];
-const birthdayMotifs=[
-"Nhưng đối với anh, dù bao nhiêu năm trôi qua, em vẫn là em bé bé bỏng của anh.","Thời gian có thể cộng thêm cho em bao nhiêu tuổi cũng được; riêng trong mắt anh, em vẫn là em bé bé bỏng ngày nào.","Em lại lớn thêm một tuổi rồi, nhưng với anh có một chuyện chẳng chịu thay đổi: em vẫn là em bé bé bỏng của anh.","Bao nhiêu năm nữa cũng vậy thôi, trong lòng anh em vẫn cứ là em bé nhỏ xíu mà anh thương.","Tuổi cứ tăng lên theo năm tháng, còn vị trí của em trong mắt anh thì vẫn vậy: em bé bé bỏng của anh.","Dù con số hôm nay có lớn thêm thế nào, anh nhìn em vẫn thấy cô em bé bé bỏng của mình.","Năm tháng có thể đổi rất nhiều thứ, nhưng với anh em vẫn là em bé mà anh luôn muốn nâng niu.","Có thể hôm nay em đã trưởng thành thêm thật nhiều, nhưng trong lòng anh em vẫn mãi là em bé bé bỏng ấy.","Mỗi sinh nhật em lại thêm một tuổi, còn trong mắt anh em dường như chẳng bao giờ thôi là em bé.","Dù thời gian đi xa tới đâu, với anh em vẫn luôn có một phần là em bé bé bỏng mà anh thương nhất."
+const birthdayOpeners=[
+"Happy birthday babi {age} tuổi. 💜","Chúc mừng sinh nhật em bé {age} tuổi. 🎂💜","Hôm nay babi tròn {age} tuổi rồi nè. 🎂","Thêm một vòng quanh Mặt Trời: babi {age} tuổi. ✨","16/01 lại tới rồi — chúc mừng tuổi {age} của em. 💜","Sinh nhật tuổi {age} của cô gái nhỏ tới rồi. 🎂","Hello phiên bản {age} tuổi của babi. 💜","Chúc mừng ngày babi bước sang tuổi {age}. 🎂✨","Hôm nay là ngày dành riêng cho babi {age} tuổi. 💜","Babi chính thức mở chương {age} tuổi rồi nha. 🎂"
 ];
-const birthdayBodies=[
-"Chúc em tuổi mới thật khỏe, thật bình yên và có nhiều ngày được sống đúng điều mình muốn.","Mong tuổi mới đem đến cho em nhiều tự do hơn, nhiều niềm vui hơn và ít điều phải bận lòng hơn.","Chúc em một tuổi mới có công việc thuận lợi, sức khỏe tốt, tiền bạc dư dả và thật nhiều chuyến đi vui.","Mong năm tuổi mới cho em thêm những người tử tế, những trải nghiệm đẹp và những giấc ngủ thật ngon.","Chúc em vẫn tò mò với thế giới, vẫn thích những điều mình thích và ngày càng thương bản thân mình hơn.","Mong những điều em đã cố gắng lâu nay bắt đầu nở hoa trong tuổi mới này.","Chúc em có đủ dũng khí để chọn điều mình muốn và đủ bình yên để bỏ qua điều không còn hợp với mình.","Mong tuổi mới có nhiều bữa ăn ngon, nhiều nơi đẹp để đi và nhiều kỷ niệm khiến em cười khi nhớ lại.","Chúc em luôn được trân trọng, được lắng nghe và được sống theo nhịp riêng của mình.","Mong năm mới của riêng em dịu dàng hơn năm cũ và mang tới vài điều tốt đẹp vượt ngoài dự tính."
+const birthdayDreams=[
+"Chúc em tuổi mới thật khỏe, thật bình yên và có nhiều ngày được sống đúng điều mình muốn.",
+"Mong tuổi mới đem đến cho em nhiều tự do hơn, nhiều niềm vui hơn và ít điều phải bận lòng hơn.",
+"Chúc công việc thuận lợi, sức khỏe tốt, tiền bạc dư dả và có thật nhiều chuyến đi vui.",
+"Mong tuổi mới cho em thêm những người tử tế, những trải nghiệm đẹp và những giấc ngủ thật ngon.",
+"Chúc em vẫn tò mò với thế giới, vẫn thích những điều mình thích và ngày càng thương bản thân hơn.",
+"Mong những điều em đã cố gắng lâu nay bắt đầu nở hoa trong tuổi mới này.",
+"Chúc em có đủ dũng khí để chọn điều mình muốn và đủ bình yên để bỏ qua điều không còn hợp.",
+"Mong tuổi mới có nhiều bữa ăn ngon, nhiều nơi đẹp để đi và nhiều kỷ niệm khiến em cười khi nhớ lại.",
+"Chúc em luôn được trân trọng, được lắng nghe và được sống theo nhịp riêng của mình.",
+"Mong năm mới của riêng em dịu dàng hơn năm cũ và mang tới vài điều tốt đẹp vượt ngoài dự tính.",
+"Mong em có thêm những lần đầu tiên thật vui và những điều quen thuộc vẫn luôn làm em thấy ấm.",
+"Chúc em ngày càng tự do trong lựa chọn, vững vàng trong lòng và nhẹ tênh trước những chuyện không đáng.",
+"Mong tuổi mới cho em nhiều buổi sáng dễ chịu, nhiều tối ngủ ngon và nhiều ngày chẳng phải lo quá nhiều.",
+"Chúc em kiếm được nhiều tiền, ăn thật ngon, đi thật xa và luôn có thời gian để tận hưởng những gì mình làm ra.",
+"Mong em bước qua tuổi mới với thật nhiều tò mò về những điều tốt đẹp chưa xảy ra."
 ];
+const birthdayForever=[
+"Dù bao nhiêu năm trôi qua, đối với anh em vẫn là em bé bé bỏng của anh.",
+"Thời gian cứ cộng tuổi cho em; còn trong mắt anh, em vẫn là em bé bé bỏng ngày nào.",
+"Em có thể lớn thêm bao nhiêu tuổi nữa cũng được, nhưng với anh em vẫn cứ là em bé nhỏ xíu mà anh thương.",
+"Con số tuổi thay đổi mỗi năm, còn một điều với anh chẳng đổi: em vẫn là em bé bé bỏng của anh.",
+"Năm tháng có thể đưa em đi thật xa, nhưng trong lòng anh em vẫn có một phần mãi là em bé ngày nào.",
+"Em trưởng thành thêm từng năm, còn anh vẫn nhìn thấy cô em bé bé bỏng quen thuộc ấy.",
+"Dù tuổi mới đưa em tới đâu, với anh em vẫn luôn là em bé mà anh muốn nâng niu.",
+"Bao nhiêu sinh nhật nữa đi qua cũng vậy thôi: trong mắt anh, em vẫn là em bé bé bỏng.",
+"Thời gian làm em lớn lên, nhưng chẳng làm mất đi cô em bé rất riêng mà anh luôn nhìn thấy ở em.",
+"Dù một ngày con số tuổi đã thật lớn, anh nghĩ mình vẫn sẽ gọi em là em bé như bây giờ."
+];
+const birthdayClosers=[
+"Chúc mừng sinh nhật em. 💜","Sinh nhật thật vui nha babi. 🎂💜","Hôm nay nhớ chiều bản thân thật nhiều nha em. 💜","Chúc ngày 16/01 của em luôn là một ngày thật đẹp. 🎂","Ăn bánh ngon và cười thật nhiều nha babi. 💜","Happy birthday một lần nữa, cô gái nhỏ. 🎂","Mong em có một sinh nhật đúng ý mình nhất. 💜","Chúc tuổi mới của em bắt đầu bằng một ngày thật vui. 🎂","Thổi nến và ước một điều thật tham nha babi. 💜","Chúc em một sinh nhật thật ấm và thật nhẹ lòng. 🎂💜"
+];
+function birthdayWish(y){
+ const age=y-2001, k=y-2027;
+ const opener=birthdayOpeners[((k%birthdayOpeners.length)+birthdayOpeners.length)%birthdayOpeners.length].replace('{age}',age);
+ const dream=birthdayDreams[((k*7+Math.floor(k/10))%birthdayDreams.length+birthdayDreams.length)%birthdayDreams.length];
+ const forever=birthdayForever[((k*3+Math.floor(k/10))%birthdayForever.length+birthdayForever.length)%birthdayForever.length];
+ const close=birthdayClosers[((k*9+Math.floor(k/10))%birthdayClosers.length+birthdayClosers.length)%birthdayClosers.length];
+ return{icon:'🎂',title:`Sinh nhật ${age} tuổi của babi`,text:`${opener} ${dream} ${forever} ${close}`};
+}
 function vietnamNow(){const p=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh',year:'numeric',month:'2-digit',day:'2-digit',weekday:'long'}).formatToParts(new Date());const o={};p.forEach(x=>o[x.type]=x.value);return o}
 function dayIndex(y,m,d){return Math.floor((Date.UTC(y,m-1,d)-Date.UTC(2026,0,1))/86400000)}
 function genericWish(y,m,d){let i=dayIndex(y,m,d);if(i<0)i=Math.abs(i);const a=i%openings.length;const b=Math.floor(i/openings.length)%middles.length;const c=Math.floor(i/(openings.length*middles.length))%endings.length;return{icon:icons[i%icons.length],title:'Lời chúc hôm nay',text:`${openings[a]} ${middles[b]} ${endings[c]}`}}
 function birthdayWish(y){const age=y-2001,k=y-2026;return{icon:'🎂',title:`Sinh nhật ${age} tuổi của babi`,text:`Happy birthday babi ${age} tuổi. 💜 ${birthdayBodies[((k%birthdayBodies.length)+birthdayBodies.length)%birthdayBodies.length]} ${birthdayMotifs[((k%birthdayMotifs.length)+birthdayMotifs.length)%birthdayMotifs.length]} Chúc mừng sinh nhật em. 💜`}}
-function holidayWish(kind,y,m,d){const base=genericWish(y,m,d);const intros={newyear:'Chúc mừng năm mới babi. ✨ Mong năm mới mở ra thật nhiều điều đẹp cho em.',valentine:'Happy Valentine babi. 💜 Mong hôm nay em được yêu thương theo cách khiến em thấy bình yên nhất.',women:'Chúc babi ngày 8/3 thật xinh và thật vui. 🌷',vnwomen:'Chúc babi 20/10 thật dịu dàng và được nâng niu thật nhiều. 🌸',halloween:'Happy Halloween babi. 🎃 Mong tối nay có chút vui, chút nhây và chẳng có gì đáng sợ ngoài việc hết đồ ăn ngon.',christmas:'Merry Christmas babi. 🎄💜 Mong em có một mùa Giáng Sinh ấm áp và một tối thật yên.',yearend:'Ngày cuối cùng của năm rồi. 🌙 Mong em giữ lại điều đáng nhớ và để những chuyện đã mệt nằm lại phía sau.'};return{icon:{newyear:'✨',valentine:'💜',women:'🌷',vnwomen:'🌸',halloween:'🎃',christmas:'🎄',yearend:'🌙'}[kind],title:{newyear:'Ngày đầu tiên của năm',valentine:'Valentine',women:'8 tháng 3',vnwomen:'20 tháng 10',halloween:'Halloween',christmas:'Giáng Sinh',yearend:'Ngày cuối cùng của năm'}[kind],text:`${intros[kind]} ${base.text}`}}
+const specialIntros={
+newyear:["Chúc mừng năm mới babi. ✨","Năm mới tới rồi đó babi. ✨","Hello một năm mới nữa của em. 🌟","Ngày đầu tiên của năm, Papa gửi em một lời chúc thật xinh. ✨","Mở cửa năm mới thôi babi ơi. 💜","Happy New Year cô gái nhỏ. ✨","Một cuốn lịch mới lại bắt đầu rồi nè. 🌷","Chào ngày đầu tiên của một năm hoàn toàn mới, babi. ✨"],
+valentine:["Happy Valentine babi. 💜","Valentine lại tới rồi nè em. 💌","14/2 hôm nay, Papa gửi em một chút màu tím. 💜","Một ngày Valentine nữa ghé qua rồi. 🌷","Happy Valentine cô gái nhỏ. 💜","Hôm nay là ngày của những điều mềm mại một chút. 💌","14 tháng 2 — một lời chúc riêng cho babi. 💜","Valentine năm nay, mong em nhận thật nhiều điều dễ thương. 🌸"],
+women:["Chúc babi 8/3 thật xinh và thật vui. 🌷","8/3 tới rồi, chúc cô gái nhỏ một ngày thật đẹp. 🌸","Ngày 8/3 này Papa gửi em một bó hoa tưởng tượng. 💐","Happy Women's Day babi. 🌷","Hôm nay 8/3, mong em được chiều một chút nha. 💜","Một ngày dành cho những cô gái tuyệt vời, trong đó có em. 🌸","8 tháng 3 rồi nè babi. 🌷","Chúc em một ngày 8/3 nhẹ nhàng và rực rỡ theo cách riêng. 💐"],
+vnwomen:["Chúc babi 20/10 thật dịu dàng và vui. 🌸","20/10 tới rồi nè cô gái nhỏ. 💜","Ngày Phụ nữ Việt Nam, chúc em được nâng niu thật nhiều. 🌷","Hôm nay 20/10, Papa gửi babi một lời chúc riêng. 🌸","Happy 20/10 babi. 💜","Một ngày 20/10 thật xinh đang đợi em đó. 🌷","20 tháng 10 — nhớ dành cho mình thật nhiều điều dễ thương nha em. 🌸","Chúc cô gái nhỏ của Papa một ngày 20/10 thật đáng nhớ. 💜"],
+halloween:["Happy Halloween babi. 🎃","Halloween tới rồi đó em. 👻","31/10 rồi, hôm nay cho phép mình nhây hơn bình thường một chút nha. 🎃","Một tối Halloween vui vẻ cho babi. 👻","Boo! Halloween năm nay Papa vẫn để một lời chúc ở đây. 🎃","Halloween ghé qua rồi nè cô gái nhỏ. 🦇","Chúc babi một ngày 31/10 vừa vui vừa hơi quậy. 🎃","Đến ngày ma quỷ rồi nhưng lời chúc này vẫn hiền nha. 👻"],
+christmas:["Merry Christmas babi. 🎄💜","Giáng Sinh tới rồi đó em. 🎄","Một mùa Noel nữa lại về rồi nè. ✨","Merry Christmas cô gái nhỏ. 🎄","Đèn Giáng Sinh sáng rồi, Papa gửi em một lời chúc ấm áp. ✨","Noel năm nay mong babi thật vui. 🎄","24/25 tháng 12, một chút ấm áp dành cho em. 💜","Giáng Sinh này chúc em có một ngày thật xinh. 🎄"],
+yearend:["Ngày cuối cùng của năm rồi. 🌙","Thêm một năm chuẩn bị khép lại rồi đó babi. ✨","31/12 — trang cuối của cuốn lịch năm nay. 🌙","Tới ngày nói tạm biệt một năm nữa rồi nè. 💜","Ngày cuối năm, Papa để lại đây một lời chúc nhỏ. ✨","Một năm dài đã đi gần hết rồi em. 🌙","Đêm cuối cùng của năm tới rồi. ✨","Khép năm lại thật nhẹ thôi nha babi. 💜"]
+};
+const specialBodies=[
+"Mong năm tháng phía trước cho em nhiều sức khỏe, tự do và những ngày được sống đúng ý mình.",
+"Mong những điều tốt đẹp đến với em không cần ồn ào, nhưng ở lại thật lâu.",
+"Mong công việc thuận lợi, tiền bạc dư dả, gia đình bình an và em có nhiều thời gian cho chính mình.",
+"Mong em đi được những nơi muốn đi, ăn những món muốn ăn và gặp những người thật tử tế.",
+"Mong mỗi lần nhìn lại, em đều thấy mình đã sống một năm đáng giá theo cách riêng.",
+"Mong em có thêm nhiều lý do để cười và ít những đêm phải mang chuyện buồn vào giấc ngủ.",
+"Mong em luôn đủ can đảm để chọn điều mình muốn, kể cả khi lựa chọn ấy khác với mọi người.",
+"Mong thế giới đối xử với em mềm hơn một chút và em cũng mềm với chính mình hơn một chút.",
+"Mong những dự định còn dang dở dần thành hình, không cần nhanh, chỉ cần đúng hướng.",
+"Mong em luôn giữ được sự tò mò, tinh nghịch và những sở thích rất riêng của mình.",
+"Mong em có thật nhiều khoảnh khắc nhỏ mà sau này nhớ lại vẫn thấy ấm.",
+"Mong những chuyện làm em mệt sớm tìm được lời giải, còn niềm vui thì chẳng cần lý do.",
+"Mong em được lắng nghe, được tôn trọng và được tự do là chính mình.",
+"Mong những người thương em biết cách thương em theo cách khiến em thấy nhẹ lòng.",
+"Mong sức khỏe của em luôn ổn, ăn ngon, ngủ ngon và thức dậy không phải mang theo quá nhiều lo lắng.",
+"Mong em gặp may đúng lúc ở vài chuyện quan trọng và cả những chuyện bé xíu.",
+"Mong em càng lớn càng hiểu mình, càng hiểu mình càng biết điều gì thật sự đáng giữ.",
+"Mong cuộc sống cho em những bất ngờ dễ thương hơn những cú ngoặt làm em mệt.",
+"Mong em có thể tự hào về những điều mình làm được, kể cả những điều chẳng ai khác nhìn thấy.",
+"Mong những ngày bình thường của em cũng có đủ niềm vui để không cần chờ một dịp đặc biệt.",
+"Mong em luôn có một nơi để trở về, một món để thèm, một bài nhạc để nghe và một điều để mong.",
+"Mong em không phải chạy quá nhanh; những gì thuộc về em có thể đến theo một nhịp thật vừa vặn.",
+"Mong em giữ được trái tim ấm nhưng cũng biết bảo vệ sự bình yên của mình.",
+"Mong mọi thay đổi đưa em tới gần hơn với cuộc sống mà em thật sự muốn.",
+"Mong em có nhiều buổi chiều đẹp, nhiều tối yên và nhiều sáng thức dậy thấy đời không tệ.",
+"Mong em gặp được những phiên bản mới của chính mình mà em cũng sẽ thích.",
+"Mong em được yêu quý mà không phải cố trở thành một người khác.",
+"Mong mỗi khó khăn qua đi đều để lại cho em thêm một chút vững vàng chứ không lấy mất sự dịu dàng.",
+"Mong em kiếm được thật nhiều tiền để mua những thứ mình thích mà không phải suy nghĩ lâu. 😌",
+"Mong lịch làm việc biết điều, thời tiết hợp tác và những ngày nghỉ đến đúng lúc em cần.",
+"Mong em có nhiều ảnh đẹp, nhiều kỷ niệm đẹp và ít chuyện phải xóa khỏi đầu.",
+"Mong điều em từng nghĩ là xa dần trở thành một phần rất bình thường trong cuộc sống.",
+"Mong em vẫn có thể vui vì những thứ nhỏ xíu, vì đôi khi chính chúng cứu cả một ngày dài.",
+"Mong em luôn biết rằng nghỉ ngơi không phải phần thưởng; mệt thì mình được phép nghỉ.",
+"Mong những cánh cửa phù hợp mở ra đúng lúc và những cánh cửa không hợp tự khép lại thật êm.",
+"Mong em có một năm mà bình yên không còn là thứ phải cố gắng mới tìm thấy.",
+"Mong em được làm nhiều thứ lần đầu tiên và phần lớn chúng đều trở thành ký ức vui.",
+"Mong em ngày càng giỏi nói có với điều mình thích và nói không với điều làm mình khó chịu.",
+"Mong mỗi năm qua đi em không chỉ thêm tuổi mà còn thêm thật nhiều tự do.",
+"Mong em luôn có đủ năng lượng cho điều quan trọng và đủ thảnh thơi để bỏ qua điều không đáng.",
+"Mong những ngày em thấy mình không ổn cũng có người và có điều gì đó đối xử thật hiền với em.",
+"Mong em không quên ăn ngon giữa những ngày bận và không quên đi chơi giữa những tháng làm việc nhiều.",
+"Mong những gì em gieo bằng sự cố gắng sẽ trả lại cho em những mùa thật đẹp.",
+"Mong em được sống một cuộc đời có nhiều chuyện để kể, nhưng ít chuyện phải tiếc.",
+"Mong em tìm thấy niềm vui ở cả nơi quen thuộc lẫn những nơi chưa từng đặt chân tới.",
+"Mong mọi thứ quan trọng với em đều được chăm sóc đủ tốt, bao gồm chính em.",
+"Mong em có thể nhìn tương lai bằng tò mò nhiều hơn lo lắng.",
+"Mong ngày tháng cho em thêm trải nghiệm nhưng đừng lấy mất nét đáng yêu rất riêng của em.",
+"Mong em có những quyết định khiến tương lai của mình phải cảm ơn phiên bản hôm nay.",
+"Mong em luôn đủ khỏe để đi xa và đủ bình yên để tận hưởng nơi mình đang đứng.",
+"Mong những điều em thật lòng mong muốn có cơ hội tìm đường tới em."
+];
+const specialEndings=[
+"Và dù hôm nay là ngày đặc biệt, điều Papa mong nhất vẫn chỉ là em vui. 💜",
+"Chúc ngày đặc biệt này để lại cho em một ký ức thật đẹp. 💜",
+"Cứ tận hưởng ngày hôm nay theo cách của em nha babi. 💜",
+"Không cần ngày lễ hoàn hảo, chỉ cần lòng em dễ chịu là đủ rồi. 💜",
+"Papa gửi lời chúc tới đây thôi, phần còn lại để em tự viết thành một ngày thật vui. 💜",
+"Mong tối nay khi ngày khép lại, em thấy nó đáng để nhớ. 💜",
+"Ăn món ngon, đi nơi em thích và cười nhiều một chút nha. 💜",
+"Chúc cô gái nhỏ có một ngày đặc biệt nhưng vẫn thật nhẹ nhàng. 💜",
+"Mong hôm nay em nhận được nhiều điều dễ thương hơn em dự tính. 💜",
+"Vậy là thêm một ngày đặc biệt nữa trong cuốn lịch của babi rồi. 💜",
+"Nhớ giữ lại một chút niềm vui của hôm nay cho những ngày bình thường phía sau nha. 💜",
+"Papa mong em sẽ luôn có cách riêng để biến những ngày như hôm nay thành kỷ niệm đẹp. 💜"
+];
+function holidayWish(kind,y,m,d){
+ const base=genericWish(y,m,d), seed=dayIndex(y,m,d);
+ const ins=specialIntros[kind];
+ const intro=ins[((seed%ins.length)+ins.length)%ins.length];
+ const body=specialBodies[((seed*7+y)%specialBodies.length+specialBodies.length)%specialBodies.length];
+ const end=specialEndings[((seed*11+y)%specialEndings.length+specialEndings.length)%specialEndings.length];
+ return{icon:{newyear:'✨',valentine:'💜',women:'🌷',vnwomen:'🌸',halloween:'🎃',christmas:'🎄',yearend:'🌙'}[kind],
+ title:{newyear:'Ngày đầu tiên của năm',valentine:'Valentine',women:'8 tháng 3',vnwomen:'20 tháng 10',halloween:'Halloween',christmas:'Giáng Sinh',yearend:'Ngày cuối cùng của năm'}[kind],
+ text:`${intro} ${body} ${end}`};
+}
 const fixedSpecial={'01-01':'newyear','02-14':'valentine','03-08':'women','10-20':'vnwomen','10-31':'halloween','12-24':'christmas','12-25':'christmas','12-31':'yearend'};
 const exactSpecial={
 '2027-02-05':{icon:'🧧',title:'29 Tết',text:'Sắp sang năm mới rồi babi. Chúc em bỏ lại những chuyện làm mình mệt ở năm cũ, dọn một chỗ thật rộng trong lòng cho niềm vui, may mắn và những điều mới thật đẹp. 💜'},
